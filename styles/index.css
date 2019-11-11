@@ -260,6 +260,8 @@ li{
     position: absolute;
     transform: translateY(42vh);
     transition: transform 1s ease-out;
+    z-index: 20;
+    
 }
 .close{
     background:  rgba(0, 0, 0, 0.705);

@@ -10,11 +10,13 @@ function closeShareButtons(){
         close.style.visibility = 'hidden';
         imgs.forEach(image => image.style.opacity = '.2');
         imgBtn.style.opacity = '1';
+        share.style.background = '' ;
     }
 }
 
 function shareButtons(){
     share.style.transform = 'translateY(-21vh)';
+    share.style.background = 'rgba(0, 0, 0, 0.705)';
     imgs.forEach(image => image.style.opacity = '1');
     close.style.visibility = 'visible';
     console.log(share.style.transform);

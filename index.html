@@ -7,31 +7,33 @@
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Shadows+Into+Light+Two&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Sacramento&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="card.css">
-    <title>Calabasa Recipe</title>
+    <link rel="stylesheet" href="/styles/index.css">
+    <title>Recipe Hunter</title>
 </head>
 <body>
     <div class="container">
         <div class="bg">
-            <div class="recipe-title"><h1>Recipe~ </h1><p id='recipe-name'>Calabasa with Rice</p></div>
+            <div class="recipe-title"><h1>Recipe~ </h1><p id='recipe-name'>Welcome to the Recipe Hunter</p></div>
             <div class="card">
                 <div class="ingredients"><p id='ing'>Ingredients<p></p>
                     <div class="ingredients-area">
-                        <p><span class='amount'>1 lb</span> <span class="main-item">GROUND MEAT</span> (any).</p>
-                            <p><span class="amount">2</span> or more <span class="main-item">ZUCCHINI</span> (any color or both).</p>
-                            <p><span class="amount">1</span> <span class="main-item">TOMATO SAUCE</span> short can (or ½ of a large can, also may use 1 to 2 tablespoons tomato PASTE but add more salt).</p>
-                            <p><span class="amount">¼</span> teaspoon <span class="main-item">SALT</span> (taste and add?).</p>
-                            <p><span class="main-item">OTHER SPICES</span> to your taste.</p>
-                            <p><span class="maint-item">WATER</span> <span class="amount">3</span> tomato sauce cans full OR enough to cover all ingredients by ¼ inch over.</p>
-                            <p><span class="main-item">RICE</span> <span class="amount">1</span> to <span class="amount">2</span> cups</p>
-                        </div>
+                        <p>We <span class="action">skip</span> the <span class="main-item">filler</span> and just <span class="action">serve</span> the <span class="main-item">beef!</span></p>
+                        <p></p>
+                        <p><span class="action">Easy-to-read</span> <span class="main-item">Recipes</span> without all the <span class="action">popups</span>.</p>
+                        <p></p>
+                        <p><span class="action">Search</span>, <span class="main-item">print</span>, <span class="amount">save</span>, share!</span></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                            
+                    </div>
                 </div>
                 <div class="mobile-menu">
                     <ul>
                         <li><a href="#">Menu</a>
                             <div class="mobile-menu-sub">
                                 <ul>
-                                    <li><a href="#">Home</a></li>
+                                    <li><a href="index.html">Home</a></li>
                                     <li><a href="#">Search</a></li>
                                     <li><a href="#" onclick="shareButtons()">Share</a></li>
                                     <li><a href="#" onclick="myFunc()">Print</a></li>
@@ -46,14 +48,18 @@
                 </div>
                 <div class="directions"><p id='dir'>Directions</p>
                     <div class="directions-area">
-                            <p><span class="action">Brown</span> <span class="main-item">MEAT</span> in a large pan.</p>
-                            <p><span class="action">Slice</span> <span class="main-item">ZUCCHINI</span> and <span class="action">add</span> to <span class="main-item">MEAT</span>.</p>
-                            <p><span class="action">Add</span> <span class="main-item">SALT</span> and any other <span class="main-items">spices</span>. <span class="action">Stir</span> and <span class="action">cook</span> for <span class="amount">3</span> minutes.</p>
-                            <p><span class="action">Add</span> <span class="main-item">TOMATO SAUCE</span> and <span class="amount">warm-to-hot</span> <span class="main-item">WATER</span> right away. <span class="action">Stir</span> for <span class="amount">1</span> minute.</p>
-                            <p>Bring it to a <span class="action">BIG BOIL</span> for <span class="amount">2 </span>minutes then <span class="action">REDUCE</span><span class="main-item"> HEAT</span> and let <span class="action">simmer</span> for <span class="amount">25</span> to <span class="amount">30 </span>mins, checking to make sure <span class="main-item">water</span> <span class="action">does not evaporate</span>; add more if necessary.</p>
-                            <p><span class="action">Cook</span> <span class="amount">1</span> to <span class="amount">2</span> cups of <span class="main-item">RICE</span>:</p>
-                            <p><span class="amount">1</span> cup of <span class="main-item">rice</span> to <span class="amount">2</span> cups of <span class="main-item">water</span> in a pot, bring to a <span class="action">BOIL</span>, <span class="action">cover,</span> then <span class="action">lower</span> <span class="main-item">HEAT</span> very very low and let <span class="action">cook</span> for <span class="amount">10</span> minutes. <span class="action">Fluff</span> with a <span class="main-item">fork</span> when done. </p>
-                            <p><span class="action">Serve</span> <span class="main-item">CALABASA</span> over <span class="main-item">RICE</span>.</p>
+                            <p><span class="action">Search </span>for a <span class="main-item">Recipe</span> <input type="search" name="recipe-search" id="recipe-search" placeholder="Ex: Lasagna"></p>
+                            <p></p>
+                            <p><a href="#" id='browse'>Browse by Category</a></p>
+                            <p></p>
+                            <p><span class="action">Click</span> on the <span class="main-item">Cutlery</span> to find random inspiration <div class="arrow"><p id='random'>SPIN</p></div></p>
+                            <p></p>
+                            <!-- <p id='questions'>Do you like our concept? <div class="yes"><ul>
+                                <li>Yes</li>
+                                <li>No</li>
+                                <li>Maybe</li>
+                            </ul></div></p> -->
+                            <p></p>
                     </div>
             </div>
                 <div class="serves"><p></p></div>
@@ -70,6 +76,6 @@
     </div>
   
     
-    <script src="script.js"></script>
+    <script src="/js/index.js"></script>
 </body>
 </html>

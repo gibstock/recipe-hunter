@@ -35,12 +35,7 @@ body{
     overflow: hidden;
     /* visibility: hidden; */
 }
-.mobile-menu ul{
-    /* display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center; */
-}
+
 .mobile-menu ul li{
     list-style-type: none;
     padding: 0;
@@ -171,7 +166,7 @@ body{
 }
 .directions-area{
     font-family: 'Work Sans', sans-serif;
-    margin-top: 
+    
 }
 .directions-area > p{
     padding-top: .4em;

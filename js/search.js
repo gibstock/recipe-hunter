@@ -37,7 +37,9 @@ function displayResults(arr){
 
 }
 function searchRecipes(e){
-    console.log(window.location);
+    if(window.location.pathname !== '/recipes/search-page.html'){
+        window.location.pathname.assign('/recipes/search-page.html')
+    }
     if(e.which === 13 && userInput.value !== ''){
         let haveIt = false;
         let results = [];

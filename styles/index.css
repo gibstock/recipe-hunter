@@ -23,6 +23,7 @@ body{
     z-index: 6;
     
 }
+/* Menu Slide-out */
 .mobile-menu{
     width: 10vw;
     height:4vh;
@@ -33,6 +34,7 @@ body{
     opacity: .7;
     z-index: 7;
     overflow: hidden;
+    transition: width 10s;
     /* visibility: hidden; */
 }
 
@@ -63,7 +65,7 @@ body{
     
     background: #fff;
     opacity: .7;
-    transition: width 1s ease-out;
+    transition: width .5s ease-out;
     /* transform: width 1s; */
     overflow: hidden;
     visibility: visible;
@@ -86,7 +88,7 @@ body{
 }
 .mobile-menu-sub li{
     padding: 0;
-    opacity: 0;
+    opacity: 1;
 }
 .mobile-menu-sub li:hover{
     background: #333;
@@ -98,7 +100,7 @@ body{
     visibility: visible;
 }
 .mobile-menu:hover .mobile-menu-sub li{
-    transition: opacity 4s ease 1s;
+    transition: opacity .1s ease 1s;
     opacity: 1;
 }
 

@@ -7,5 +7,5 @@ let recipeList = [
     'apple-pie-cookies', 
     'cheesy-chicken-muffin-pizzas', 
     'slow-cooker-herbed-chicken-and-potatoes', 
-    'pancake bites'
+    'pancake-bites'
 ];

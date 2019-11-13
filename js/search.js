@@ -27,7 +27,7 @@ function displayResults(arr){
         let a = document.createElement('a');
         let p = document.createElement('p');
         let textNode = document.createTextNode(arr[i]);
-        a.setAttribute('href', `${arr[i]}-recipe.html`);
+        a.setAttribute('href', `/recipes/${arr[i]}-recipe.html`);
         p.setAttribute('class', 'results');
         a.appendChild(textNode);
         p.appendChild(a);

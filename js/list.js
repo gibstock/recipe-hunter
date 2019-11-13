@@ -2,10 +2,10 @@
 export {recipeList};
 
 let recipeList = [
-    'burritos',
-    'enchiladas',
-    'tacos',
-    'quesadilla',
-    'queso',
-    'calabasa-with-rice'
+    'calabasa-with-rice',
+    'taco cups', 
+    'apple pie cookies', 
+    'cheesy chicken muffin pizzas', 
+    'slow cooker herbed chicken and potatoes', 
+    'pancake bites'
 ];

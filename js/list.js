@@ -6,5 +6,6 @@ let recipeList = [
     'enchiladas',
     'tacos',
     'quesadilla',
-    'queso'
+    'queso',
+    'calabasa-with-rice'
 ];

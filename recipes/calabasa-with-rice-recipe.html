@@ -8,33 +8,40 @@
     <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Sacramento&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/card.css">
-    <title>Calabasa Recipe</title>
+    <title> Recipe</title>
 </head>
 <body>
     <div class="container">
         <div class="bg">
-            <div class="recipe-title"><h1>Recipe~ </h1><p id='recipe-name'>Calabasa with Rice</p></div>
+            <div class="recipe-title"><h1>Recipe~ </h1><p id='recipe-name'>NAME HERE</p></div>
             <div class="card">
                 <div class="ingredients"><p id='ing'>Ingredients<p></p>
                     <div class="ingredients-area">
                         <p><span class='amount'>1 lb</span> <span class="main-item">GROUND MEAT</span> (any).</p>
+                        
                             <p><span class="amount">2</span> or more <span class="main-item">ZUCCHINI</span> (any color or both).</p>
+                            
                             <p><span class="amount">1</span> <span class="main-item">TOMATO SAUCE</span> short can (or ½ of a large can, also may use 1 to 2 tablespoons tomato PASTE but add more salt).</p>
+                            
                             <p><span class="amount">¼</span> teaspoon <span class="main-item">SALT</span> (taste and add?).</p>
+                            
                             <p><span class="main-item">OTHER SPICES</span> to your taste.</p>
+                            
                             <p><span class="maint-item">WATER</span> <span class="amount">3</span> tomato sauce cans full OR enough to cover all ingredients by ¼ inch over.</p>
+                            
                             <p><span class="main-item">RICE</span> <span class="amount">1</span> to <span class="amount">2</span> cups</p>
-                        </div>
+                            
+                    </div>
                 </div>
                 <div class="mobile-menu">
                     <ul>
                         <li><a href="#">Menu</a>
                             <div class="mobile-menu-sub">
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="../index.html">Home</a></li>
                                     <li><a href="search-page.html">Search</a></li>
-                                    <li><a href="#" onclick="shareButtons()">Share</a></li>
-                                    <li><a href="#" onclick="myFunc()">Print</a></li>
+                                    <li><a href="#" id='shareBtn'>Share</a></li>
+                                    <li><a href="#" id='printBtn'>Print</a></li>
                                     
                                 </ul>
                             </div>
@@ -46,30 +53,53 @@
                 </div>
                 <div class="directions"><p id='dir'>Directions</p>
                     <div class="directions-area">
-                            <p><span class="action">Brown</span> <span class="main-item">MEAT</span> in a large pan.</p>
-                            <p><span class="action">Slice</span> <span class="main-item">ZUCCHINI</span> and <span class="action">add</span> to <span class="main-item">MEAT</span>.</p>
-                            <p><span class="action">Add</span> <span class="main-item">SALT</span> and any other <span class="main-items">spices</span>. <span class="action">Stir</span> and <span class="action">cook</span> for <span class="amount">3</span> minutes.</p>
-                            <p><span class="action">Add</span> <span class="main-item">TOMATO SAUCE</span> and <span class="amount">warm-to-hot</span> <span class="main-item">WATER</span> right away. <span class="action">Stir</span> for <span class="amount">1</span> minute.</p>
-                            <p>Bring it to a <span class="action">BIG BOIL</span> for <span class="amount">2 </span>minutes then <span class="action">REDUCE</span><span class="main-item"> HEAT</span> and let <span class="action">simmer</span> for <span class="amount">25</span> to <span class="amount">30 </span>mins, checking to make sure <span class="main-item">water</span> <span class="action">does not evaporate</span>; add more if necessary.</p>
-                            <p><span class="action">Cook</span> <span class="amount">1</span> to <span class="amount">2</span> cups of <span class="main-item">RICE</span>:</p>
-                            <p><span class="amount">1</span> cup of <span class="main-item">rice</span> to <span class="amount">2</span> cups of <span class="main-item">water</span> in a pot, bring to a <span class="action">BOIL</span>, <span class="action">cover,</span> then <span class="action">lower</span> <span class="main-item">HEAT</span> very very low and let <span class="action">cook</span> for <span class="amount">10</span> minutes. <span class="action">Fluff</span> with a <span class="main-item">fork</span> when done. </p>
-                            <p><span class="action">Serve</span> <span class="main-item">CALABASA</span> over <span class="main-item">RICE</span>.</p>
+                        <p><span class="action">Brown</span> <span class="main-item">MEAT</span> in a large pan.</p>
+                            
+                        <p><span class="action">Slice</span> <span class="main-item">ZUCCHINI</span> and <span class="action">add</span> to <span class="main-item">MEAT</span>.</p>
+                        
+                        <p><span class="action">Add</span> <span class="main-item">SALT</span> and any other <span class="main-items">spices</span>. <span class="action">Stir</span> and <span class="action">cook</span> for <span class="amount">3</span> minutes.</p>
+                        
+                        <p><span class="action">Add</span> <span class="main-item">TOMATO SAUCE</span> and <span class="amount">warm-to-hot</span> <span class="main-item">WATER</span> right away. <span class="action">Stir</span> for <span class="amount">1</span> minute.</p>
+                        
+                        <p>Bring it to a <span class="action">BIG BOIL</span> for <span class="amount">2 </span>minutes then <span class="action">REDUCE</span><span class="main-item"> HEAT</span> and let <span class="action">simmer</span> for <span class="amount">25</span> to <span class="amount">30 </span>mins, checking to make sure <span class="main-item">water</span> <span class="action">does not evaporate</span>; add more if necessary.</p>
+                        
+                        
+                        <p><span class="action">Cook</span> <span class="amount">1</span> to <span class="amount">2</span> cups of <span class="main-item">RICE</span>:</p>
+                        
+                        <p><span class="amount">1</span> cup of <span class="main-item">rice</span> to <span class="amount">2</span> cups of <span class="main-item">water</span> in a pot, bring to a <span class="action">BOIL</span>, <span class="action">cover,</span> then <span class="action">lower</span> <span class="main-item">HEAT</span> very very low and let <span class="action">cook</span> for <span class="amount">10</span> minutes. <span class="action">Fluff</span> with a <span class="main-item">fork</span> when done. </p>
+                        
+                        <p><span class="action">Serve</span> <span class="main-item">CALABASA</span> over <span class="main-item">RICE</span>.</p>
                     </div>
             </div>
                 <div class="serves"><p></p></div>
             </div>
         </div>
         <div class="share">
-            <div class="close" onclick="closeShareButtons()">X</div> <!--These buttons are created by frinmash.blogspot.com,frinton madtha--> 
+            <div class="close">X</div> <!--These buttons are created by recipe-hunter.com,frinton madtha--> 
             <div id="share-buttons"> 
                 <!-- Facebook --> 
-                <a href="https://www.facebook.com/sharer.php?u=https://frinmash.blogspot.com" target="_blank"><img src="https://4.bp.blogspot.com/-raFYZvIFUV0/UwNI2ek6i3I/AAAAAAAAGSA/zs-kwq0q58E/s1600/facebook.png" alt="Facebook" /></a>
-                 <!-- Twitter --> <a href="https://twitter.com/share?url=https://frinmash.blogspot.com&text=Simple Share Buttons" target="_blank"><img src="https://4.bp.blogspot.com/--ISQEurz3aE/UwNI4hDaQMI/AAAAAAAAGS4/ZAgmPiM9Xpk/s1600/twitter.png" alt="Twitter" /></a> <!-- Google+ --> <a href="https://plus.google.com/share?url=https://frinmash.blogspot.com" target="_blank"><img src="https://2.bp.blogspot.com/-9ijXNtKTaSk/UwNI3ANT4MI/AAAAAAAAGSY/Tu4kE8x9SnI/s1600/google.png" alt="Google" /></a> <!-- Digg --> <a href="https://www.digg.com/submit?url=https://frinmash.blogspot.com" target="_blank"><img src="https://4.bp.blogspot.com/-AUdsqB7cajQ/UwNI2iqT_AI/AAAAAAAAGR8/0FV_ZcsiylU/s1600/diggit.png" alt="Digg" /></a> <!-- Reddit --> <a href="http://reddit.com/submit?url=https://frinmash.blogspot.com&title=Simple Share Buttons" target="_blank"><img src="https://4.bp.blogspot.com/-1-mZEa1eiyc/UwNI4JytiFI/AAAAAAAAGSs/AoKmBkkJR-s/s1600/reddit.png" alt="Reddit" /></a> <!-- LinkedIn --> <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://frinmash.blogspot.com" target="_blank"><img src="https://2.bp.blogspot.com/-3_cATk7Wlho/UwNI3eoTTLI/AAAAAAAAGSQ/Y8cpq6S-SeQ/s1600/linkedin.png" alt="LinkedIn" /></a> <!-- Pinterest --> <a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','https://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());"><img src="https://2.bp.blogspot.com/-3CfsOmDx-Dg/UwNI3kMVjgI/AAAAAAAAGSU/OSixn3lcjX4/s1600/pinterest.png" alt="Pinterest" /></a> <!-- StumbleUpon--> <a href="http://www.stumbleupon.com/submit?url=https://frinmash.blogspot.com&title=Simple Share Buttons" target="_blank"><img src="https://2.bp.blogspot.com/-si3v8X2IVGI/UwNI4bncQrI/AAAAAAAAGSo/iZepRnIJFZU/s1600/stumbleupon.png" alt="StumbleUpon" /></a> <!-- Email --> <a href="mailto:?Subject=FrinMash&Body=I%20saw%20this%20and%20thought%20of%20you!%20 https://frinmash.blogspot.com"><img src="https://4.bp.blogspot.com/-njgKtNLrPqI/UwNI2o-9WfI/AAAAAAAAGR4/f8da1gBgyLs/s1600/email.png" alt="Email" /></a> </div>
+                <a href="https://www.facebook.com/sharer.php?u=https://recipe-hunter.com" target="_blank"><img src="https://4.bp.blogspot.com/-raFYZvIFUV0/UwNI2ek6i3I/AAAAAAAAGSA/zs-kwq0q58E/s1600/facebook.png" alt="Facebook" /></a>
+                 <!-- Twitter --> 
+                 <a href="https://twitter.com/share?url=https://recipe-hunter.com&text=Simple Share Buttons" target="_blank"><img src="https://4.bp.blogspot.com/--ISQEurz3aE/UwNI4hDaQMI/AAAAAAAAGS4/ZAgmPiM9Xpk/s1600/twitter.png" alt="Twitter" /></a> 
+                 <!-- Google+ --> 
+                 <a href="https://plus.google.com/share?url=https://recipe-hunter.com" target="_blank"><img src="https://2.bp.blogspot.com/-9ijXNtKTaSk/UwNI3ANT4MI/AAAAAAAAGSY/Tu4kE8x9SnI/s1600/google.png" alt="Google" /></a> 
+                 <!-- Digg --> 
+                 <a href="https://www.digg.com/submit?url=https://recipe-hunter.com" target="_blank"><img src="https://4.bp.blogspot.com/-AUdsqB7cajQ/UwNI2iqT_AI/AAAAAAAAGR8/0FV_ZcsiylU/s1600/diggit.png" alt="Digg" /></a> 
+                 <!-- Reddit --> 
+                 <a href="http://reddit.com/submit?url=https://recipe-hunter.com&title=Simple Share Buttons" target="_blank"><img src="https://4.bp.blogspot.com/-1-mZEa1eiyc/UwNI4JytiFI/AAAAAAAAGSs/AoKmBkkJR-s/s1600/reddit.png" alt="Reddit" /></a> 
+                 <!-- LinkedIn --> 
+                 <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://recipe-hunter.com" target="_blank"><img src="https://2.bp.blogspot.com/-3_cATk7Wlho/UwNI3eoTTLI/AAAAAAAAGSQ/Y8cpq6S-SeQ/s1600/linkedin.png" alt="LinkedIn" /></a> 
+                 <!-- Pinterest --> 
+                 <a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','https://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());"><img src="https://2.bp.blogspot.com/-3CfsOmDx-Dg/UwNI3kMVjgI/AAAAAAAAGSU/OSixn3lcjX4/s1600/pinterest.png" alt="Pinterest" /></a> 
+                 <!-- StumbleUpon--> 
+                 <a href="http://www.stumbleupon.com/submit?url=https://recipe-hunter.com&title=Simple Share Buttons" target="_blank"><img src="https://2.bp.blogspot.com/-si3v8X2IVGI/UwNI4bncQrI/AAAAAAAAGSo/iZepRnIJFZU/s1600/stumbleupon.png" alt="StumbleUpon" /></a> 
+                 <!-- Email --> 
+                 <a href="mailto:?Subject=RecipeHunter&Body=I%20saw%20this%20and%20thought%20of%20you!%20 https://recipe-hunter.com"><img src="https://4.bp.blogspot.com/-njgKtNLrPqI/UwNI2o-9WfI/AAAAAAAAGR4/f8da1gBgyLs/s1600/email.png" alt="Email" /></a> </div>
 
  </div>
     </div>
   
     
-    <script src="script.js"></script>
+    <script src="../js/script.js" type='module'></script>
 </body>
 </html>

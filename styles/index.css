@@ -317,6 +317,7 @@ li{
     padding-right: 25%;
     /* text-decoration: underline; */
 }
+/* SHARE BUTTONS SLIDE UP */
 #share-buttons{ 
     /* width: 35px; */
     padding: 5px; 
@@ -357,12 +358,24 @@ li{
 .close:hover{
     cursor: pointer;
 }
+/* search button  */
 button{
     margin: .5em;
     padding: .4em;
-    border-radius: 50%;
+    border-radius: 12px;
     background: rgb(38, 106, 138);
     color: #fff;
+}
+button:hover{
+    background: rgba(0, 0, 0, 1);
+    box-shadow: 0 4px 20px black;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+button:active{
+    background: rgb(189, 42, 128);
+    letter-spacing: 2px;
+    box-shadow: 0 4px 30px purple;;
 }
 .arrow{
     width: .8em;

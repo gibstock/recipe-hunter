@@ -451,4 +451,21 @@ button{
 .results a:hover{
     background: gray;
 }
-
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1em;
+    
+}
+.grid > div{
+    /* background: rgb(243, 130, 65); */
+    color: #fff;
+}
+.grid > div a{
+    background: rgb(243, 130, 65);
+    text-decoration: none;
+    color: #fff;
+}
+.grid > div a:hover{
+    background: #777;
+}

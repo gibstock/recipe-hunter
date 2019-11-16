@@ -7,6 +7,9 @@ let foodSearch = sessionStorage.getItem('foodSearch');
 
 
 function ifFromIndexSearch(){
+    if(foodSearch === null){
+        return;
+    }else{
         let haveIt = false;
         let results = [];
             recipeList.forEach(recipe => {
@@ -19,6 +22,8 @@ function ifFromIndexSearch(){
                 alert(`Sorry, we don't have that in our database yet. But we'll log this in and include it soon.`);
             }
             displayResults(results);
+
+    }
 }
 
 function displayResults(arr){

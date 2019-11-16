@@ -7,26 +7,25 @@
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Shadows+Into+Light+Two&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Sacramento&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/card.css">
-    <title> Recipe</title>
+    <link rel="stylesheet" href="/styles/search.css">
+    <title>Recipe Hunter</title>
 </head>
 <body>
     <div class="container">
         <div class="bg">
-            <div class="recipe-title"><h1>Recipe~ </h1><p id='recipe-name'>NAME HERE</p></div>
+            <div class="recipe-title"><h1>Recipe~ </h1><p id='recipe-name'>Welcome to the Recipe Hunter</p></div>
             <div class="card">
                 <div class="ingredients"><p id='ing'>Ingredients<p></p>
                     <div class="ingredients-area">
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                            
+                        <p><span class="action">Search </span>for a <span class="main-item">Recipe</span> <!--or an <span class="main-item">Ingredient</span>--> <input type="search" name="recipe-search" id="recipe-search" placeholder="Ex: Lasagna"></p>  
                     </div>
+                    <div class="search-results">
+                        <p class='results'><a href="calabasa-with-rice-recipe.html">Calabasa with Rice</a></p>
+                        <p class="results"><a href="cheesy-chicken-muffin-pizzas-recipe.html">Cheesy Chicken Muffin Pizzas</a></p>
+                        <p class="results"><a href="slow-cooker-herbed-chicken-and-potatoes-recipe.html">Slow Cooker Herbed Chicken and Potatoes</a></p>
+                        <p class="results"><a href="taco-cups-recipe.html">Taco Cups</a></p>
+                    </div>
+
                 </div>
                 <div class="mobile-menu">
                     <ul>
@@ -35,8 +34,8 @@
                                 <ul>
                                     <li><a href="../index.html">Home</a></li>
                                     <li><a href="search-page.html">Search</a></li>
-                                    <li><a href="#" id='shareBtn'>Share</a></li>
-                                    <li><a href="#" id='printBtn'>Print</a></li>
+                                    <li><a href="#" onclick="shareButtons()">Share</a></li>
+                                    <li><a href="#" onclick="myFunc()">Print</a></li>
                                     
                                 </ul>
                             </div>
@@ -46,18 +45,6 @@
                 <div class="pic">
                     <img id='img' src="https://images.pexels.com/photos/6206/table-kitchen-eat-elegance.jpg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="cutlery">
                 </div>
-                <div class="directions"><p id='dir'>Directions</p>
-                    <div class="directions-area">
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                    </div>
-            </div>
                 <div class="serves"><p></p></div>
             </div>
         </div>
@@ -87,6 +74,6 @@
     </div>
   
     
-    <script src="../js/script.js" type='module'></script>
+    <script src="/js/search.js" type='module'></script>
 </body>
 </html>

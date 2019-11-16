@@ -7,7 +7,17 @@ const close = document.querySelector('.close');
 const shareBtn = document.querySelector('#shareBtn');
 const printBtn = document.querySelector('#printBtn');
 const userInputIndex = document.querySelector('#recipe-search');
+const ingArea = document.querySelector('.ingredients-area');
+let ingredients = ingArea.querySelectorAll('p');
 
+
+// ingSearch();
+// function ingSearch(){
+//     ingredients.forEach(item => {
+//         if(item.includ)
+//     }
+//         );
+// }
 function closeShareButtons(){
     if(share.style.transform === 'translateY(-21vh)'){
         share.style.transform = 'translateY(42vh)';

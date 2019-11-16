@@ -448,8 +448,10 @@ button{
 .results a{
     text-decoration: none;
 }
+
 .results a:hover{
     background: gray;
+    color: #fff;
 }
 .grid{
     display: grid;

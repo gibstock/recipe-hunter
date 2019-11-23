@@ -186,36 +186,43 @@ body{
     }
 } 
 .container{
-    height: 100vh;
+    height: 110vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 1em;
 }
 .bg{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background: url('https://images.pexels.com/photos/6205/eating-table-kitchen-silver.jpg?auto=compress&cs=tinysrgb&h=750&w=1260') rgba(211, 182, 139, 0.568);
-    width: 95%;
-    height: 80vh;
+    width: 100%;
+    /* height: 80vh; */
     position: relative;
+    margin: 2em;
 }
-.recipe-title,
+.bg > a{
+    color: #fff;
+}
+/* .recipe-title,
 .ingredients,
 .directions{
     border: 1px solid rgba(138, 132, 120, 0.774);
     background: rgb(255, 253, 243);
-}
+} */
 .card{
     background: rgb(252, 247, 220);
     border: 1px solid rgba(138, 132, 120, 0.774);
     margin: 15px 10px;
-    height: 65vh;
+    /* height: 65vh; */
     width: 95vw;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows:6fr 6fr 1fr;
+    display: flex;
+    justify-content: center;
+    /* grid-template-columns: 3fr 1fr;
+    grid-template-rows:6fr 6fr 1fr; */
     border-radius: 15px;
     /* position: relative; */
 }

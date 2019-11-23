@@ -458,3 +458,7 @@ button:active{
     justify-content: center;
     align-items: center;
 }
+.serves{
+    /* width: 100%; */
+    text-align: center;
+}

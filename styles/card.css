@@ -175,7 +175,7 @@ body{
     padding-left: .4em;
     border-bottom: .5px solid black;
     padding-bottom: .2em;
-    scroll-snap-align: start;
+    scroll-snap-align: center;
     font-size: 1.3em;
     
 }
@@ -189,7 +189,7 @@ body{
     padding-left: .4em;
     border-bottom: .5px solid black;
     padding-bottom: .2em;
-    scroll-snap-align: start;
+    scroll-snap-align: center;
 
 }
 .main-item{

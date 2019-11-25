@@ -134,7 +134,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    background: url('https://images.pexels.com/photos/6205/eating-table-kitchen-silver.jpg?auto=compress&cs=tinysrgb&h=750&w=1260') rgba(211, 182, 139, 0.568);
+    background: rgba(0, 0, 0, 0.103);
+    /* background: url('https://images.pexels.com/photos/6205/eating-table-kitchen-silver.jpg?auto=compress&cs=tinysrgb&h=750&w=1260') rgba(211, 182, 139, 0.568); */
     width: 95%;
     height: 80vh;
     position: relative;
@@ -188,7 +189,7 @@ body{
     padding-left: .4em;
     border-bottom: .5px solid black;
     padding-bottom: .2em;
-    scroll-snap-align: center;
+    /* scroll-snap-align: start end; */
 
 }
 .main-item{
@@ -244,11 +245,11 @@ li{
     border: 0; 
     box-shadow: 0; 
     display: grid;
-    grid-template-columns: repeat(9,1fr); 
+    grid-template-columns: repeat(5,1fr); 
     gap: .5em;
 }
 #share-buttons img{
-    width: 90%;
+    width: 70%;
     border-radius: 50%;
     box-shadow: 0 2px 20px 1px rgba(0, 0, 0, 0.705);
     opacity: .2;

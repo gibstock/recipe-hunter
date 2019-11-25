@@ -30,7 +30,7 @@ body{
     background: #fff;
     position: absolute;
     top: 8vh;
-    right: 10vw;
+    right: 1vw;
     opacity: .7;
     z-index: 7;
     overflow: hidden;
@@ -340,6 +340,7 @@ li{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
     position: absolute;
     transform: translateY(42vh);
     transition: transform 1s ease-out;
@@ -460,5 +461,23 @@ button:active{
 }
 .serves{
     /* width: 100%; */
+    text-align: center;
+    grid-column: 1/3;
+}
+.serves a{
+    color: #000;
+    text-decoration: none;
+}
+.serves a:hover{
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+.space{
+    position: absolute;
+    bottom: 0;
+    height: 3vh;
+    background: #000;
+    color: #aaa;
+    width: 100%;
     text-align: center;
 }

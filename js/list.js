@@ -2,10 +2,16 @@
 export {recipeList};
 
 let recipeList = [
+    'apple-pie-cookies',
+    'breakfast-hash',
     'calabasa-with-rice',
-    'taco-cups', 
-    'apple-pie-cookies', 
-    'cheesy-chicken-muffin-pizzas', 
-    'slow-cooker-herbed-chicken-and-potatoes', 
-    'pancake-bites'
+    'carrot-apple-zucchini-bread',
+    'cheesy-chicken-muffin-pizzas',
+    'cinnamon-swirl-banana-bread',
+    'overnight-oats',
+    'pancake-bites',
+    'peanut-butter-honey-banana-muffins',
+    'slow-cooker-italian-herbed-chicken-potatoes',
+    'taco-cups',
+    'veggie-pot-pie'
 ];

@@ -28,7 +28,7 @@ body{
     background: #fff;
     position: absolute;
     top: 8vh;
-    right: 10vw;
+    right: 1vw;
     opacity: .7;
     z-index: 7;
     overflow: hidden;
@@ -113,62 +113,17 @@ body{
     opacity: 1;
 }
 
-
-@media screen and (min-width: 600px){
-    #img{
-        transform: rotate(0deg);
-        box-shadow: 0 20px 20px 2px rgba(0, 0, 0, 0.705);
-
-    }
-    
-
-} 
-@media screen and (min-width: 426px){
-    .mobile-menu:hover #menu{
-        opacity: 0;
-        transition: opacity .5s;
-    }#menu{
-        position: absolute;
-        left: 50%;
-        transform: translateX(-40%) translateY(-50%);
-        top: 50%;
-        font-size: 1.4em;
-        opacity: 1;
-        transition-property: opacity;
-        transition-delay: 5s;
-        transition-duration: .5s;
-
-    }
+#recipe-name{
+    background: rgb(255, 253, 243);
+    text-align: center;
+    width: 100%;
+    font-size: 1.4rem;
+    font-family: 'work sans';
+    border-radius: 5px;
+    padding-left: 5%;
+    padding-right: 25%;
 }
-@media screen and (max-width: 425px){
-    .mobile-menu{
-        width: 57vw;
-        right: 4vw;
-        transition: none;
-    }
-    .mobile-menu ul li a{
-        font-size: .8em;
-        transition: none;
-    }
-    .mobile-menu ul li{
-        transition: none;
-        opacity: 1;
-    }
-    .mobile-menu:hover{
-        width: 65vw;
-        transition: none;
-    }
-    .mobile-menu-sub{
-        visibility: visible;
-        transition: none;
-    }
-    #printBtn{
-        visibility: hidden;
-    }
-    #menu{
-        visibility: hidden;
-    }
-}
+
 .container{
     height: 100vh;
     display: flex;
@@ -213,16 +168,20 @@ body{
 }
 .ingredients-area{
     font-family: 'Work Sans', sans-serif;
+    
 }
 .ingredients-area > p{
     padding-top: .4em;
     padding-left: .4em;
     border-bottom: .5px solid black;
     padding-bottom: .2em;
+    scroll-snap-align: start;
+    font-size: 1.3em;
     
 }
 .directions-area{
     font-family: 'Work Sans', sans-serif;
+    
     
 }
 .directions-area > p{
@@ -230,6 +189,8 @@ body{
     padding-left: .4em;
     border-bottom: .5px solid black;
     padding-bottom: .2em;
+    scroll-snap-align: start;
+
 }
 .main-item{
     color: rgb(38, 106, 138);
@@ -261,27 +222,24 @@ body{
 
 .ingredients{
     margin: 35px 5px 3px 20px;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
+    overflow-y: auto;   
+    overscroll-behavior-y: contain; 
+    scroll-snap-type: y mandatory;
 }
 .directions{
     grid-column: 1/3;
     margin: 27px 20px 0px 20px;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
+    overflow-y: auto;   
+    overscroll-behavior-y: contain; 
+    scroll-snap-type: y mandatory;
 }
 
 li{
     padding: .3em;
 }
-#recipe-name{
-    background: rgb(255, 253, 243);
-    text-align: center;
-    width: 100%;
-    font-size: 2.3em;
-    font-family: 'work sans';
-    border-radius: 5px;
-    padding-left: 5%;
-    padding-right: 25%;
-}
+
 #share-buttons{ 
     padding: 5px; 
     border: 0; 
@@ -320,4 +278,91 @@ li{
 }
 .close:hover{
     cursor: pointer;
+}
+.serves{
+    /* width: 100%; */
+    text-align: center;
+    grid-column: 1/3;
+}
+.serves a{
+    color: #000;
+    text-decoration: none;
+}
+.serves a:hover{
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+.space{
+    position: absolute;
+    bottom: 0;
+    height: 3vh;
+    background: #000;
+    color: #aaa;
+    width: 100%;
+    text-align: center;
+}
+@media screen and (min-width: 600px){
+    #img{
+        transform: rotate(0deg);
+        box-shadow: 0 20px 20px 2px rgba(0, 0, 0, 0.705);
+
+    }
+    
+    
+
+} 
+@media screen and (min-width: 426px){
+    .mobile-menu:hover #menu{
+        opacity: 0;
+        transition: opacity .5s;
+    }#menu{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-40%) translateY(-50%);
+        top: 50%;
+        font-size: 1.4em;
+        opacity: 1;
+        transition-property: opacity;
+        transition-delay: 5s;
+        transition-duration: .5s;
+
+    }
+    
+    
+}
+@media screen and (max-width: 425px){
+    .mobile-menu{
+        width: 57vw;
+        right: 4vw;
+        transition: none;
+    }
+    .mobile-menu ul li a{
+        font-size: .8em;
+        transition: none;
+    }
+    .mobile-menu ul li{
+        transition: none;
+        opacity: 1;
+    }
+    .mobile-menu:hover{
+        width: 65vw;
+        transition: none;
+    }
+    .mobile-menu-sub{
+        visibility: visible;
+        transition: none;
+    }
+    #printBtn{
+        visibility: hidden;
+    }
+    #menu{
+        visibility: hidden;
+    }
+    #recipe-name{
+        color: #000;
+        font-size: 3em;
+    }
+    
+    
+    
 }

@@ -24,11 +24,13 @@ body{
     justify-content: center;
 }
 #img{
-    max-width: 100%;
-    transform: rotate(90deg);
-    box-shadow: 15px 0px 20px 2px rgba(0, 0, 0, 0.705);
+    max-width: 90%;
+    /* transform: rotate(90deg); */
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.705);
     transition: transform .5s ease-in;
     z-index: 6;
+    overflow: hidden;
+    border-radius: 50%;
     
 }
 /* Menu Slide-out */
@@ -133,15 +135,7 @@ body{
 }
 
 
-@media screen and (min-width: 600px){
-    #img{
-        transform: rotate(0deg);
-        box-shadow: 0 20px 20px 2px rgba(0, 0, 0, 0.705);
-
-    }
-    
-
-} 
+ 
 @media screen and (min-width: 426px){
     .mobile-menu:hover #menu{
         opacity: 0;

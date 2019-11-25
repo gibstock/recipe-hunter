@@ -120,8 +120,7 @@ body{
     font-size: 1.4rem;
     font-family: 'work sans';
     border-radius: 5px;
-    padding-left: 5%;
-    padding-right: 25%;
+    
 }
 
 .container{
@@ -134,7 +133,7 @@ body{
 .bg{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     background: url('https://images.pexels.com/photos/6205/eating-table-kitchen-silver.jpg?auto=compress&cs=tinysrgb&h=750&w=1260') rgba(211, 182, 139, 0.568);
     width: 95%;
     height: 80vh;
@@ -150,7 +149,7 @@ body{
     background: rgb(252, 247, 220);
     border: 1px solid rgba(138, 132, 120, 0.774);
     margin: 15px 10px;
-    height: 65vh;
+    height: 70vh;
     width: 95vw;
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -163,7 +162,7 @@ body{
 }
 #dir{
     position: absolute;
-    top:47%;
+    top:50.5%;
     
 }
 .ingredients-area{
@@ -176,7 +175,7 @@ body{
     border-bottom: .5px solid black;
     padding-bottom: .2em;
     scroll-snap-align: center;
-    font-size: 1.3em;
+    /* font-size: 1.3em; */
     
 }
 .directions-area{
@@ -206,7 +205,7 @@ body{
 .recipe-title{
     background: rgb(252, 247, 220);
     position: absolute;
-    top: 10px;
+    top: 0px;
     width: 80vw;
     padding-left: 5px;
     font-size: .3em;

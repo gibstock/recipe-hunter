@@ -391,7 +391,7 @@ li{
         font-size: .7em;
     }
     #dir{
-        transform: translateY(-40px) translateX(-15px);
+        transform: translateY(-6vh) translateX(-15px);
     }
     #ing{
         transform: translateX(-15px);

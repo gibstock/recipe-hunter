@@ -390,6 +390,12 @@ li{
     .space{
         font-size: .7em;
     }
+    #dir{
+        transform: translateY(-40px) translateX(-15px);
+    }
+    #ing{
+        transform: translateX(-15px);
+    }
     
     
     

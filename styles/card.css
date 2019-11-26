@@ -193,7 +193,7 @@ body{
 }
 #dir{
     position: absolute;
-    top:304px;
+    top:51.5%;
     
 }
 .ingredients-area{
@@ -391,7 +391,7 @@ li{
         font-size: .7em;
     }
     #dir{
-        transform: translateY(-6vh) translateX(-15px);
+        transform: translateX(-15px);
     }
     #ing{
         transform: translateX(-15px);
